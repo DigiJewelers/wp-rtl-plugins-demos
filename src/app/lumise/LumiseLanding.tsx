@@ -932,13 +932,13 @@ function Hero() {
             <div className="flex items-center gap-2 font-bold text-amber-600 justify-center"
                  style={{minWidth: '250px'}}>
               <Star size={15} fill="currentColor"/>
-              <span dir="ltr">#1 Best Selling 2020</span>
+              <span dir="ltr" className="mt-2">#1 Best Selling 2020</span>
             </div>
 
 
             <span className="hidden h-4 w-px bg-slate-200 sm:block"/>
 
-            <span className="w-full max-w-[250px]">
+            <span className="w-full max-w-[250px] mt-2 ">
               <TrustTicker/>
             </span>
 
@@ -950,10 +950,10 @@ function Hero() {
                   <Star key={i} size={12} fill="currentColor"/>
                 ))}
               </span>
-              <strong dir="ltr" className="font-black text-slate-800">
+              <strong dir="ltr" className="font-black mt-1 text-slate-800">
                 4.79 / 5
               </strong>
-              امتیاز CodeCanyon
+              <span className="mt-1">امتیاز CodeCanyon</span>
             </div>
           </div>
         </Reveal>
