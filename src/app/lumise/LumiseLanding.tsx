@@ -97,7 +97,7 @@ const DEMO_ICONS: Record<DemoId, LucideIcon> = {
 
 const trustStats = [
   {value: "4.79 / 5", label: "امتیاز از ۹۰۷ رأی", icon: Star},
-  {value: "3K+", label: "کامنت و دیدگاه کاربران", icon: MessagesSquare},
+  {value: "3,000+", label: "کامنت و دیدگاه کاربران", icon: MessagesSquare},
   {value: "13,500+", label: "مشتری در بازار بین‌المللی", icon: Globe2},
   {value: "4,000+", label: "فایل هدیه و رایگان", icon: Gift},
   {value: "", label: "مطمئن و بدون کد مخرب امنیتی", icon: ShieldCheck},
@@ -816,17 +816,6 @@ function TrustTicker() {
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div
-        dir="ltr"
-        className="flex items-center gap-2 text-[10px] font-black tracking-[0.2em] text-emerald-600"
-      >
-        <span className="relative flex h-2 w-2">
-          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60"/>
-          <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"/>
-        </span>
-        TRUSTED WORLDWIDE
-      </div>
-
       <div className="relative h-8 w-full overflow-hidden" aria-live="polite">
         <AnimatePresence mode="wait">
           <motion.p
@@ -837,11 +826,11 @@ function TrustTicker() {
             transition={{duration: 0.28}}
             className="flex items-center justify-center gap-2 whitespace-nowrap text-sm sm:text-base"
           >
-            <Icon size={18} className="shrink-0 text-violet-600"/>
-            <strong dir="ltr" className="font-black text-slate-900">
+            <Icon size={18} className="shrink-0 text-emerald-700"/>
+            <strong dir="ltr" className="font-black text-emerald-700">
               {item.value}
             </strong>
-            <span className="text-slate-500">{item.label}</span>
+            <span className="text-emerald-700">{item.label}</span>
           </motion.p>
         </AnimatePresence>
       </div>
